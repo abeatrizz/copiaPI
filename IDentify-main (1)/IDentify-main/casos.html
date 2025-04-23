@@ -16,8 +16,11 @@
         <div class="search-bloco">
           <input type="text" id="inputBusca" placeholder="Buscar casos" />
           <img src="icons/busca.png" alt="Ícone de busca" id="iconeBusca" />
-          <img src="icons/filtro.png" alt="Ícone de filtro" id="iconeFiltro" />
-        </div>
+          <button class="" type="button" data-bs-toggle="modal" data-bs-target="#filtroModal">
+            <img src="icons/filtro.png" alt="Ícone de filtro">   
+
+        </button>
+      </div>
         
             <div class="perfil-bloco">
               <img src="icons/perito.jpg" alt="Perfil" class="icone-perfil">
@@ -210,6 +213,47 @@
   </div>
   </div>
   </main>   
+
+  <!-- Modal de Filtro -->
+<div class="modal fade" id="filtroModal" tabindex="-1" aria-labelledby="filtroModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="filtroModalLabel">Filtrar Casos</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <form id="formFiltro">
+          <div class="mb-3">
+            <label for="statusFiltro" class="form-label">Status</label>
+            <select class="form-select" id="statusFiltro">
+              <option value="todos">Todos</option>
+              <option value="aberto">Aberto</option>
+              <option value="fechado">Fechado</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="categoriaFiltro" class="form-label">Categoria</label>
+            <select class="form-select" id="categoriaFiltro">
+              <option value="todos">Todos</option>
+              <option value="criminal">Criminal</option>
+              <option value="civil">Civil</option>
+              <option value="odontologico">Odontológico</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="dataFiltro" class="form-label">Data</label>
+            <input type="date" class="form-control" id="dataFiltro">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-dark" id="btnAplicarFiltro">Aplicar Filtro</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script src="js/script.js"></script>
 </body>

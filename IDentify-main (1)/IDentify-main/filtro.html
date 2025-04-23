@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/filtro.css" />
+  <title>IDentify - Filtro</title>
+</head>
+<body>
+    <div id="filtroModal" class="filtro-modal">
+    <div class="modal-content">
+      <span id="fecharModal" class="fechar-modal">&times;</span>
+      <h3>Filtrar Casos</h3>
+      
+      <label for="statusFiltro">Status:</label>
+      <select id="statusFiltro">
+        <option value="todos">Todos</option>
+        <option value="aberto">Aberto</option>
+        <option value="fechado">Fechado</option>
+      </select>
+  
+      <label for="dataFiltro">Data:</label>
+      <input type="date" id="dataFiltro" />
+  
+      <label for="categoriaFiltro">Categoria:</label>
+      <select id="categoriaFiltro">
+        <option value="todos">Todos</option>
+        <option value="criminal">Criminal</option>
+        <option value="civil">Civil</option>
+        <option value="odontologico">Odontológico</option>
+      </select>
+  
+      <button id="aplicarFiltro">Aplicar Filtro</button>
+    </div>
+  </div>
+
+  <script src="js/cadastro.js"></script>
+  
+</body>
+</html>

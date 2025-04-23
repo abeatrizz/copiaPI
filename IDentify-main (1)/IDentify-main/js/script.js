@@ -111,3 +111,28 @@ function carregarPagina(pagina) {
 window.onload = function() {
   carregarPagina('home.html');
 };
+
+document.getElementById('btnAplicarFiltro').addEventListener('click', function () {
+  const status = document.getElementById('statusFiltro').value;
+  const categoria = document.getElementById('categoriaFiltro').value;
+  const data = document.getElementById('dataFiltro').value;
+
+  // Aqui vai a lógica do seu filtro:
+  console.log("Status:", status);
+  console.log("Categoria:", categoria);
+  console.log("Data:", data);
+
+  // Exemplo de ação:
+  // chamar função para atualizar os resultados da página
+  aplicarFiltro(status, categoria, data);
+
+  // Fecha o modal
+  const filtroModal = bootstrap.Modal.getInstance(document.getElementById('filtroModal'));
+  filtroModal.hide();
+});
+
+function aplicarFiltro(status, categoria, data) {
+  // Aqui você pode adicionar a lógica que quiser para filtrar os casos da tela
+  alert(`Filtro aplicado!\nStatus: ${status}\nCategoria: ${categoria}\nData: ${data}`);
+}
+
