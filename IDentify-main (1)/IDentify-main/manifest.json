@@ -1,0 +1,35 @@
+{
+    "name": "IDentify - Sistema Odontolegal",
+    "short_name": "IDentify",
+    "start_url": "/",
+    "display": "standalone",
+    "description": "Plataforma para gerenciamento de casos periciais odontológicos, análise de evidências e geração de laudos digitais.",
+    "lang": "pt-BR",
+    "dir": "auto",
+    "theme_color": "#F1EFEC",
+    "background_color": "#123458",
+    "orientation": "any",
+    "icons": [
+      {
+        "src": "icons/playstore.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "maskable"
+      },
+      {
+        "src": "icons/playstore.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "any"
+      }
+    ],
+    "screenshots": [
+      {
+        "src": "icons/playstore.png",
+        "sizes": "2880x1800",
+        "type": "image/png",
+        "description": "Tela inicial com painel de casos e notificações"
+      }
+    ]
+  }
+  
